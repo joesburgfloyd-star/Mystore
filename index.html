@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegance — Clothing Store</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf9f7; color: #333; }
+    header { background: #1a1a2e; color: #fff; padding: 3rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; letter-spacing: 3px; }
+    header p { margin-top: 0.5rem; color: #e94560; font-size: 1.1rem; }
+    nav { display: flex; justify-content: center; gap: 2rem; padding: 1rem;
+          background: #16213e; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #e94560; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.5rem; padding: 2rem; max-width: 1200px; margin: auto; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            overflow: hidden; text-align: center; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 320px; object-fit: cover; }
+    .card h3 { margin: 1rem 0 0.3rem; font-size: 1.2rem; }
+    .card p { color: #777; font-size: 0.9rem; padding: 0 1rem; }
+    .card .price { display: block; font-weight: bold; font-size: 1.3rem;
+                   color: #e94560; margin: 0.8rem 0 1.2rem; }
+    .order-btn { display: inline-block; margin-bottom: 1.5rem; padding: 0.6rem 1.5rem;
+                 background: #1a1a2e; color: #fff; border-radius: 25px;
+                 text-decoration: none; font-weight: 600; }
+    .order-btn:hover { background: #e94560; }
+    footer { text-align: center; padding: 2rem; background: #1a1a2e; color: #fff; margin-top: 2rem; }
+    footer a { color: #e94560; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ELEGANCE</h1>
+    <p>Style that speaks for you</p>
+  </header>
+
+  <nav>
+    <a href="#men">Men</a>
+    <a href="#women">Women</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== WOMEN'S SECTION ===== -->
+  <section class="products" id="women">
+    <div class="card">
+      <img src="https://picsum.photos/seed/dress1/400/500" alt="Floral Summer Dress">
+      <h3>Floral Summer Dress</h3>
+      <p>Light, breathable fabric — perfect for sunny days.</p>
+      <span class="price">$34.99</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/blouse2/400/500" alt="Silk Blouse">
+      <h3>Silk Blouse</h3>
+      <p>Elegant office-to-evening staple.</p>
+      <span class="price">$28.99</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/jeans3/400/500" alt="High-Waist Jeans">
+      <h3>High-Waist Jeans</h3>
+      <p>Comfortable stretch denim with a modern fit.</p>
+      <span class="price">$42.00</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+  </section>
+
+  <!-- ===== MEN'S SECTION ===== -->
+  <section class="products" id="men">
+    <div class="card">
+      <img src="https://picsum.photos/seed/shirt4/400/500" alt="Classic Oxford Shirt">
+      <h3>Classic Oxford Shirt</h3>
+      <p>Timeless button-down in premium cotton.</p>
+      <span class="price">$31.50</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/jacket5/400/500" alt="Denim Jacket">
+      <h3>Denim Jacket</h3>
+      <p>Versatile everyday layer for any season.</p>
+      <span class="price">$49.99</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/seed/hoodie6/400/500" alt="Hoodie">
+      <h3>Street Hoodie</h3>
+      <p>Soft fleece hoodie — casual comfort, urban style.</p>
+      <span class="price">$38.00</span>
+      <a class="order-btn" href="#contact">Order Now</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <footer id="contact">
+    <h2>Order or Ask a Question</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>WhatsApp / Phone: +123 456 7890</p>
+    <p>&copy; 2026 Elegance Clothing. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
